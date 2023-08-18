@@ -37,6 +37,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Rectangle card -->
                 <div class="card w-80 bg-base-100 shadow-xl">
                     <figure><img src="/images/rectangle.png" alt="Shoes" /></figure>
@@ -58,14 +59,25 @@
                         </div>
                     </div>
                 </div>
-                <!-- third card -->
+
+                <!-- parallelogram card -->
                 <div class="card w-80 bg-base-100 shadow-xl">
-                    <figure><img src="/images/rhombus.png" alt="Shoes" /></figure>
+                    <figure><img src="/images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                        <h2 class="card-title">Shoes!</h2>
-                        <p>If a dog chews shoes whose shoes does he choose?</p>
-                        <div class="card-actions justify-end">
-                            <button class="btn btn-primary">Buy Now</button>
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b X h</p>
+                        <p>
+                            <!-- parallelogram width -->
+                            <input id="parallelogram-width" type="text" class="border w-20 ml-3 px-2" placeholder="b">
+                            <span class="ml-2">cm</span>
+
+                            <!-- parallelogram height -->
+                            <input id="parallelogram-height" type="text" class="border w-20 ml-3 px-2" placeholder="h">
+                            <span class="ml-2">cm</span>
+                        </p>
+                        <p class="text-2xl">Area: <span id="parallelogram-area"> 0</span> cm <sup>2</sup></p>
+                        <div class="card-actions">
+                            <button onclick="calculateParallelogramArea()" class="btn btn-primary  w-full">Calculat</button>
                         </div>
                     </div>
                 </div>
